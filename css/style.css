@@ -157,6 +157,7 @@ height: 100%;
   .twrap{
     float: right;
     margin: 48px;
+    
   }
   .text {
       color:white;
@@ -167,6 +168,27 @@ height: 100%;
       letter-spacing: 0.1em;
   
   }
+
+  .section1 .circle-one {
+    position: absolute;
+    width: 1095px;
+    height: 1095px;
+    left: -500px;
+    top: -500px;
+    display: inline-block;
+    background: url(../images/resources/circle-one.png) no-repeat
+}
+
+.section1 .circle-two {
+    position: absolute;
+    width: 1100px;
+    height: 1100px;
+    right: -500px;
+    top: 40px;
+    display: inline-block;
+    background: url(../images/resources/circle-two.png) no-repeat;
+    opacity: .5
+}
   @keyframes wave {
     0% {
       margin-left: 0;
@@ -211,12 +233,6 @@ main{
   letter-spacing: 0.2em;
 }
 
-.exerted{
-
-color:#434253;
-}
-
-
 .section1{
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,6 +243,17 @@ color:#434253;
     padding-top: 50px;
     
    
+}
+
+.section1:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 37px;
+  height: 130px;
+  width: 1182px;
+  z-index: 1;
+
 }
 @keyframes rotate {
   from {
@@ -258,7 +285,7 @@ color:#434253;
   position: absolute;
   width: 47px;
   height: 47px;
-  left: 30%;
+  left: 55%;
   top: 17%;
   display: inline-block;
   background: url(../images/icons/icon-2.png) no-repeat;
@@ -454,7 +481,51 @@ color:#434253;
         top: 0
     }
 }
+ /* buttons*/
+ 
 
+ a {
+  cursor: pointer!important;
+  
+}
+
+a:hover, a:focus, a:visited {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  outline: none;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+ .btn-style-one {
+  position: relative;
+  line-height: 29px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  letter-spacing: 0;
+  background-color: #0d1c44;
+  border: 2px solid #0d1c44;
+  padding: 4px 15px 5px;
+  font-family: 'Roboto',sans-serif;
+  -moz-box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+  -ms-box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+  -o-box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+  -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+}
+.theme-btn {
+  display: inline-block;
+  transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+ /* end buttons*/
 @media screen and (max-width: 320px) {
     #timeline {
         margin: 30px;
@@ -482,8 +553,13 @@ color:#434253;
 }
 
 div.exerted {
- 
-  padding: 5px;
+  margin: auto;
+  padding: 50px;
+  text-transform: uppercase;  
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #434253;
 }
 @media screen and (min-width: 601px) {
   div.exerted {
