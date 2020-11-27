@@ -174,7 +174,7 @@ height: 100%;
     width: 1095px;
     height: 1095px;
     left: -500px;
-    top: -500px;
+    top: -250px;
     display: inline-block;
     background: url(../images/resources/circle-one.png) no-repeat
 }
@@ -285,8 +285,8 @@ main{
   position: absolute;
   width: 47px;
   height: 47px;
-  left: 55%;
-  top: 17%;
+  left: 25%;
+  top: 60%;
   display: inline-block;
   background: url(../images/icons/icon-2.png) no-repeat;
   animation-name:            rotate; 
@@ -298,8 +298,8 @@ main{
   position: absolute;
   width: 47px;
   height: 47px;
-  left: 60%;
-  top: 40%;
+  left: 30%;
+  top: 65%;
   display: inline-block;
   background: url(../images/icons/icon-3.png) no-repeat;
   animation: bounce 3s ease infinite;
@@ -308,8 +308,8 @@ main{
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 50%;
-  top: 20%;
+  left: 25%;
+  top: 70%;
   display: inline-block;
   background: url(../images/icons/icon-3.png) no-repeat;
   animation: bounce 3s ease infinite;
@@ -344,13 +344,13 @@ main{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    transform: skewY(-4deg);
+    transform: skewY(-2deg);
 }
 .content {
 	
     margin: 2 auto;
     position: relative;
-    transform: skewY(4deg);
+    transform: skewY(2deg);
 }
 @keyframes gradient {
   0% {
@@ -376,7 +376,7 @@ main{
     
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    transform: skewY(-4deg);
+    transform: skewY(-2deg);
  
 }
 /* card */
@@ -507,7 +507,7 @@ a:hover, a:focus, a:visited {
   font-weight: 500;
   border-radius: 50px;
   letter-spacing: 0;
-  background-color: #0d1c44;
+  background-color: #ffffff;
   border: 2px solid #0d1c44;
   padding: 4px 15px 5px;
   font-family: 'Roboto',sans-serif;
@@ -557,13 +557,14 @@ div.exerted {
   padding: 50px;
   text-transform: uppercase;  
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1em;
   color: #434253;
+  text-align: left;
 }
 @media screen and (min-width: 601px) {
   div.exerted {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
