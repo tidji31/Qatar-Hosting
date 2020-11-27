@@ -489,7 +489,7 @@ main{
   
 }
 
-a:hover, a:focus, a:visited {
+a:hover, a:visited {
   text-decoration: none;
   text-decoration-line: none;
   text-decoration-style: initial;
