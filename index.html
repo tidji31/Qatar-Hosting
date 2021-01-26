@@ -21,6 +21,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+    <script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 200) {
+        $(".navig").css("background" , "linear-gradient(to left, #2e00f5, #d155b8)");       
+	  }
+
+	  else{
+		  $(".navig").css("background" , "");  	
+	  }
+  })
+})
+    </script>
 </head>
 
 <body>
@@ -28,8 +42,8 @@
     <header>
         <div class="doha ">
             <!-- #region nav-->
-            <nav class="navbar navbar-default navbar-expand-lg fixed-top navbar-dark">
-                <div class="container">
+            <nav class="navbar navbar-default navbar-expand-lg fixed-top navbar-dark navig">
+                <div class="container ">
                     <div class="row col-lg-12">
                         <div class="col-lg-2">
                             <a class="navbar-brand">
@@ -43,12 +57,13 @@
                             <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
                                 <ul class="navigation navbar-nav ml-auto text-center">
                                     <li class="nav-item active"> <a href="#" class="nav-link"> Home </a> </li>
-                                    <li class="nav-item"> <a href="#" class="nav-link"> Product </a> </li>
+                                    <li class="nav-item"> <a href="#" class="nav-link"> SERVICES </a> </li>
                                     <li class="nav-item"> <a href="#" class="nav-link"> About </a> </li>
                                     <li class="nav-item"> <a href="#" class="nav-link"> Contact Us </a> </li>
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
 
                 </div>
