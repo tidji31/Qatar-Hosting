@@ -22,7 +22,7 @@ html{
     background-position: center top;
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+   /* overflow-x: hidden; */
     
 
 }
@@ -65,6 +65,41 @@ nav{
 .navbar-dark .navbar-nav .nav-link:hover{
   color: white;
   font-size: 1.5rem;
+}
+/* sub-menus */
+
+.navig li > ul {
+  position: absolute;
+  margin-right: -2.23%;
+  display: none;
+  animation: slide 0.1s linear 0s normal;
+  
+}
+
+.navig li > ul > li {
+  display: block;
+  background: whitesmoke;
+  border-top: 1px solid white;
+  font-weight: 600;
+  padding-right: 0%;
+}
+
+.navig li > ul > li > a {
+  display: block;
+  padding: 5px 12px;
+}
+
+.navig li:hover > ul {
+  display: block;
+  animation: slide 0.1s linear 0s normal;
+  margin-left: -2.22%;
+}
+
+.navig li:hover > ul li:hover > a {
+  color: white;
+  background: linear-gradient(to left, #2e00f5, #d155b8);
+  
+  
 }
 /* -- flex --*/
 .flex-container{
