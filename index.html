@@ -258,14 +258,14 @@
                     <div class="whytitle">Why chose us ?</div>
                 </div>
                     <div data-aos="fade-left imgconttext ">
-                       <div class="row ">
-                        <div class="lightbulb"></div>
+                       <div class="row whyanimation">
+                        <div id="mouve1" class="lightbulb"><h2>conceptualization</h2> </div>
                        </div>
                         <div class="row ">
-                        <div class="designer"></div>
+                        <div id="mouve2" class="designer"><h2>ui design</h2> </div>
                         </div>
                        <div class="row ">
-                        <div class="customer"></div>
+                        <div id="mouve3" class="customer "><h2>24 / 7 support</h2></div>
                        </div>
                     </div>
                 </div>
@@ -375,6 +375,31 @@
             easing: "easeOutExpo",
             delay: 7000
         });
+</script>
+<script>
+    var lastScrollTop = 3492;
+    var min =53;
+    var max =600;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   lastleft1 =  $('.lightbulb').position().left;
+   lastleft2 =  $('.designer').position().left;
+   lastleft3 =  $('.customer').position().left;
+   if (st > lastScrollTop && lastleft1 < max && lastleft2 < max && lastleft2 < max){
+       // downscroll code
+       $('.lightbulb').css('left', '+=42');
+       $('.designer').css('left', '+=32');
+       $('.customer').css('left', '+=22');
+   } else if(st < lastScrollTop && lastleft1 > min && lastleft2 > min && lastleft3 > min){
+      // upscroll code
+      $('.lightbulb').css('left', '-=42');
+      $('.designer').css('left', '-=32');
+      $('.customer').css('left', '-=22');
+   }
+   lastScrollTop = st;
+   
+});
+
 </script>
 
 </html>

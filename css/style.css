@@ -644,7 +644,7 @@ div.exerted {
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 10%;
+  left: 35px;
   top: 10%;
   white-space: nowrap;
   display: inline-block;
@@ -656,7 +656,7 @@ div.exerted {
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 10%;
+  left: 35px;
   top: 60%;
   white-space: nowrap;
   display: inline-block;
@@ -668,14 +668,19 @@ div.exerted {
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 10%;
+  left: 35px;
   top: 80%;
   white-space: nowrap;
   display: inline-block;
   background: url(../images/customer-service.svg) no-repeat;
   animation: bounce3 3s ease infinite;
 }
-
+.whyanimation >h2, .lightbulb>h2, .designer>h2, .customer >h2{
+  text-transform: capitalize;
+  position: absolute;
+  left:-400%;
+  top:50%;
+}
 /*footer*/
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background: linear-gradient(to left, #2e00f5, #d155b8); min-height:250px; padding:10px 0px 25px 0px ;}
