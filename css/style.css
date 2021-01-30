@@ -79,20 +79,24 @@ nav{
 .navig li > ul > li {
   display: block;
   background: whitesmoke;
-  border-top: 1px solid white;
-  font-weight: 600;
+  padding: 5px 7px;
+  border-top: 1px solid rgb(170, 161, 161);
+  font-weight: 500;
   padding-right: 0%;
+  text-transform: capitalize;
+  text-align: left;
 }
 
 .navig li > ul > li > a {
   display: block;
-  padding: 5px 12px;
+  padding: 5px 7px;
+ 
 }
 
 .navig li:hover > ul {
   display: block;
   animation: slide 0.1s linear 0s normal;
-  margin-left: -2.22%;
+ 
 }
 
 .navig li:hover > ul li:hover > a {
@@ -226,6 +230,21 @@ height: 100%;
     display: inline-block;
     background: url(../images/resources/circle-one.png) no-repeat
 }
+.section3 .circle-one {
+  position: absolute;
+  width: 955px;
+  height: 950px;
+  right: -500px;
+  top: -150px;
+  display: inline-block;
+  background: url(../images/resources/circle-one.png) no-repeat
+}
+.section3 .circle-one {
+  animation-name: zoom-fade;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 .section1 .circle-two {
     position: absolute;
@@ -315,6 +334,16 @@ main{
   from {top: 106px;}
   50%  {top: 86px;}
   to   {top: 106px;}
+}
+@keyframes bounce2{
+  from {top: 256px;}
+  50%  {top: 236px;}
+  to   {top: 256px;}
+}
+@keyframes bounce3{
+  from {top: 436px;}
+  50%  {top: 416px;}
+  to   {top: 436px;}
 }
 .section1 .icon-one {
   position: absolute;
@@ -417,8 +446,6 @@ main{
     height: 600px;
     opacity: 0.9;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
     
@@ -597,6 +624,58 @@ div.exerted {
     font-size: 30px;
   }
 }
+/*section3 */
+.whytitle{
+  position: absolute;
+  left:40%;
+  top: 50%;
+  margin: auto;
+  padding: 50px;
+  text-transform: uppercase;  
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #434253;
+  text-align: center;
+  animation: bounce2 3s ease infinite;
+}
+
+.lightbulb{
+  position: absolute;
+  width: 100px;
+  height: 102px;
+  left: 10%;
+  top: 10%;
+  white-space: nowrap;
+  display: inline-block;
+  background: url("../images/lightbulb.svg")no-repeat;
+  animation: bounce 3s ease infinite;
+  
+}
+.designer{
+  position: absolute;
+  width: 100px;
+  height: 102px;
+  left: 10%;
+  top: 60%;
+  white-space: nowrap;
+  display: inline-block;
+  background: url(../images/designer.svg) no-repeat;
+  animation: bounce2 3s ease infinite;
+ 
+}
+.customer{
+  position: absolute;
+  width: 100px;
+  height: 102px;
+  left: 10%;
+  top: 80%;
+  white-space: nowrap;
+  display: inline-block;
+  background: url(../images/customer-service.svg) no-repeat;
+  animation: bounce3 3s ease infinite;
+}
+
 /*footer*/
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background: linear-gradient(to left, #2e00f5, #d155b8); min-height:250px; padding:10px 0px 25px 0px ;}
