@@ -257,7 +257,7 @@
                 <div data-aos="fade-right">
                     <div class="whytitle">Why chose us ?</div>
                 </div>
-                    <div data-aos="fade-left imgconttext ">
+                    <div>
                        <div class="row whyanimation">
                         <div id="mouve1" class="lightbulb"><h2>conceptualization</h2> </div>
                        </div>
@@ -377,28 +377,29 @@
         });
 </script>
 <script>
-    var lastScrollTop = 3492;
-    var min =53;
-    var max =600;
-$(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   lastleft1 =  $('.lightbulb').position().left;
-   lastleft2 =  $('.designer').position().left;
-   lastleft3 =  $('.customer').position().left;
-   if (st > lastScrollTop && lastleft1 < max && lastleft2 < max && lastleft2 < max){
-       // downscroll code
-       $('.lightbulb').css('left', '+=42');
-       $('.designer').css('left', '+=32');
-       $('.customer').css('left', '+=22');
-   } else if(st < lastScrollTop && lastleft1 > min && lastleft2 > min && lastleft3 > min){
-      // upscroll code
-      $('.lightbulb').css('left', '-=42');
-      $('.designer').css('left', '-=32');
-      $('.customer').css('left', '-=22');
-   }
-   lastScrollTop = st;
-   
-});
+    var begin =53;
+    var end =$(window).width()-(10*$(window).width()/100);
+   $(function(){
+	 var lastScrollTop = parseInt($('.section3').offset().top), delta = 220;
+	 $(window).scroll(function(){
+		 var nowScrollTop = $(this).scrollTop();
+		 if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+		 	if (nowScrollTop > lastScrollTop ){
+		 		 // downscroll code   
+                  $('.lightbulb').animate({left:''+end+'px'}, 3000, 'linear');
+                  $('.designer').animate({left:''+end+'px'}, 4000, 'linear');
+                  $('.customer').animate({left:''+end+'px'}, 5000, 'linear'); 
+		 	} else {
+		 		// upscroll code    
+                 $('.lightbulb').animate({left:''+begin+'px'},'speed');
+                 $('.designer').animate({left:''+begin+'px'},'speed');
+                 $('.customer').animate({left:''+begin+'px',},'speed'); 
+			}
+		 lastScrollTop = nowScrollTop;
+		 }
+	 });
+ });
+
 
 </script>
 
