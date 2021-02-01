@@ -259,13 +259,27 @@
                 </div>
                     <div>
                        <div class="row whyanimation">
-                        <div id="mouve1" class="lightbulb"><h2>conceptualization</h2> </div>
+                        <div  class="lightbulb">
+                            <div class="text">
+                                Rapid flow of ideas that are quick to market which easily determine the direction of your goals - pondering interactive digital solutions from websites and email marketing campaigns to mobile apps and touch-screen solutions.
+                            </div>                     
+                         </div>
                        </div>
                         <div class="row ">
-                        <div id="mouve2" class="designer"><h2>ui design</h2> </div>
+                        <div  class="designer">
+                            <div class="text">
+                                Our creative team develops brand experiences across multiple channels and digital touch points, with the goal of combining inspiration and ease to communicate your ideas that drive engagement and action
+                            </div>
+                            
+
+                        </div>
                         </div>
                        <div class="row ">
-                        <div id="mouve3" class="customer "><h2>24 / 7 support</h2></div>
+                        <div class="customer ">
+                            <div class="text">
+                                While exceeding and achieving clients' business and marketing goals we wont just disappear on live.We're here for you as long as you need.you can't beat the support and encouragement of a faithful team.Can you?
+                            </div>
+                          </div>
                        </div>
                     </div>
                 </div>
@@ -376,26 +390,49 @@
             delay: 7000
         });
 </script>
+
 <script>
-    var begin =53;
-    var end =$(window).width()-(10*$(window).width()/100);
+    
    $(function(){
-	 var lastScrollTop = parseInt($('.section3').offset().top), delta = 220;
+	 var lastScrollTop = $(".section3").offset().top, delta = 1;
 	 $(window).scroll(function(){
-		 var nowScrollTop = $(this).scrollTop();
+		 var nowScrollTop = $(window).scrollTop();
 		 if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
 		 	if (nowScrollTop > lastScrollTop ){
-		 		 // downscroll code   
-                  $('.lightbulb').animate({left:''+end+'px'}, 3000, 'linear');
-                  $('.designer').animate({left:''+end+'px'}, 4000, 'linear');
-                  $('.customer').animate({left:''+end+'px'}, 5000, 'linear'); 
+                  // downscroll code  
+                  if ($(window).scrollTop() <= $(".lightbulb").offset().top)
+                  {
+                    $('.lightbulb').css({filter:'grayscale(0%)'});
+                  
+                  }
+                  else if ($(window).scrollTop() <= $(".designer").offset().top)
+                  {
+                 
+                    $('.designer').css({filter:'grayscale(0%)'});
+                   
+                    
+                  }
+                  else if ($(window).scrollTop() <= $(".customer").offset().top)
+                  {
+                   
+                    $('.customer').css({filter:'grayscale(0%)'});
+                  }
 		 	} else {
 		 		// upscroll code    
-                 $('.lightbulb').animate({left:''+begin+'px'},'speed');
-                 $('.designer').animate({left:''+begin+'px'},'speed');
-                 $('.customer').animate({left:''+begin+'px',},'speed'); 
+                 if (nowScrollTop >= $(".lightbulb").position().top)
+                  {
+                    $('.lightbulb').css({filter:'grayscale(100%)'});
+                  }
+                  if (nowScrollTop >= $(".designer").position().top)
+                  {
+                    $('.designer').css({filter:'grayscale(100%)'});
+                  }
+                  if (nowScrollTop >= $(".customer").position().top)
+                  {
+                    $('.customer').css({filter:'grayscale(100%)'});
+                  } 
 			}
-		 lastScrollTop = nowScrollTop;
+		 lastScrollTop = $(this).scrollTop();
 		 }
 	 });
  });

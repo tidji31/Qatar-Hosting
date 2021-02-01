@@ -345,6 +345,11 @@ main{
   50%  {top: 416px;}
   to   {top: 436px;}
 }
+@keyframes bounce4{
+  from {top: -20px;}
+  50%  {top: 10px;}
+  to   {top: -20px;}
+}
 .section1 .icon-one {
   position: absolute;
   width: 58px;
@@ -627,59 +632,61 @@ div.exerted {
 /*section3 */
 .whytitle{
   position: absolute;
-  left:40%;
+  left:30%;
   top: 50%;
   margin: auto;
   padding: 50px;
-  text-transform: uppercase;  
+  text-transform: capitalize;  
   font-size: 38px;
   font-weight: 600;
   letter-spacing: 0.1em;
   color: #434253;
   text-align: center;
-  animation: bounce2 3s ease infinite;
+  animation: bounce4 3s ease infinite;
 }
 
 .lightbulb{
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 35px;
+  right: 35px;
   top: 10%;
   white-space: nowrap;
   display: inline-block;
   background: url("../images/lightbulb.svg")no-repeat;
   animation: bounce 3s ease infinite;
+  filter: grayscale(100%);
   
 }
 .designer{
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 35px;
+  right: 35px;
   top: 60%;
   white-space: nowrap;
   display: inline-block;
   background: url(../images/designer.svg) no-repeat;
   animation: bounce2 3s ease infinite;
+  filter: grayscale(100%);
  
 }
 .customer{
   position: absolute;
   width: 100px;
   height: 102px;
-  left: 35px;
+  right: 35px;
   top: 80%;
   white-space: nowrap;
   display: inline-block;
   background: url(../images/customer-service.svg) no-repeat;
   animation: bounce3 3s ease infinite;
+  filter: grayscale(100%);
 }
-.whyanimation >h2, .lightbulb>h2, .designer>h2, .customer >h2{
-  text-transform: capitalize;
-  position: absolute;
-  left:-400%;
-  top:50%;
+.text{
+  color: #000;
+  font-size: 16px;
+  line-height: 1.7em;
 }
 /*footer*/
 .col_white_amrc { color:#FFF;}
