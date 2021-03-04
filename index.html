@@ -13,6 +13,11 @@
     
     <link rel="stylesheet" href="css/cssanimate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- owl-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- -->
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -251,39 +256,49 @@
         </div>
 
         <div class="section3" id="3">
-           <div class="row ">
-            <div class="circle-one"></div> 
+           <div class="container ">
+          
               <div class="col-sm-12">
-                <div data-aos="fade-right">
-                    <div class="whytitle">Why chose us ?</div>
-                </div>
-                    <div>
-                       <div class="row whyanimation">
-                        <div  class="lightbulb">
-                            <div class="text">
-                                Rapid flow of ideas that are quick to market which easily determine the direction of your goals - pondering interactive digital solutions from websites and email marketing campaigns to mobile apps and touch-screen solutions.
-                            </div>                     
-                         </div>
-                       </div>
-                        <div class="row ">
-                        <div  class="designer">
-                            <div class="text">
-                                Our creative team develops brand experiences across multiple channels and digital touch points, with the goal of combining inspiration and ease to communicate your ideas that drive engagement and action
-                            </div>
-                            
-
-                        </div>
-                        </div>
-                       <div class="row ">
-                        <div class="customer ">
-                            <div class="text">
-                                While exceeding and achieving clients' business and marketing goals we wont just disappear on live.We're here for you as long as you need.you can't beat the support and encouragement of a faithful team.Can you?
-                            </div>
-                          </div>
-                       </div>
+                <div data-aos="fade-right ">
+                    <div class="row col-sm-12">
+                      <div class="col-sm-3">
+                      </div>
+                       <div class="col-sm-6">
+                            <h1>Technology Proficiency</h1>
+                             <br>
+                            <h5>We use trending technologies that gives unique IT solutions</h5>
+                      </div>
+                       <div class="col-sm-3">
+                      </div>  
                     </div>
+                      <div class="row " style="padding-top:60px">
+                      
+                       <div class="col-sm-12">
+                              <div class="owl-carousel row ">
+                     <div class="frame_work"> <img src="images/Technology/android.png"></div>
+                     <div class="frame_work"> <img src="images/Technology/app-store.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/flutter.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/reactlogo2.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/ionic-logo.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/angular.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/bootstrap_icon.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/laravel.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/symfony.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/shopify.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/yii_framwork.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/postgresql-logo.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/mongo-db-design.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/power-bi.jpg"> </div>
+                     <div class="frame_work"> <img src="images/Technology/pentaho.png"> </div>
+                     <div class="frame_work"> <img src="images/Technology/share-point.png"> </div>  
+                    </div>
+                      </div>
+                     
+                    </div>
+                  
                 </div>
               </div>
+                <div class="circle-one"></div> 
            </div>
         </div>
     
@@ -391,53 +406,16 @@
         });
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 <script>
-    
-   $(function(){
-	 var lastScrollTop = $(".section3").offset().top, delta = 1;
-	 $(window).scroll(function(){
-		 var nowScrollTop = $(window).scrollTop();
-		 if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
-		 	if (nowScrollTop > lastScrollTop ){
-                  // downscroll code  
-                  if ($(window).scrollTop() <= $(".lightbulb").offset().top)
-                  {
-                    $('.lightbulb').css({filter:'grayscale(0%)'});
-                  
-                  }
-                  else if ($(window).scrollTop() <= $(".designer").offset().top)
-                  {
-                 
-                    $('.designer').css({filter:'grayscale(0%)'});
-                   
-                    
-                  }
-                  else if ($(window).scrollTop() <= $(".customer").offset().top)
-                  {
-                   
-                    $('.customer').css({filter:'grayscale(0%)'});
-                  }
-		 	} else {
-		 		// upscroll code    
-                 if (nowScrollTop >= $(".lightbulb").position().top)
-                  {
-                    $('.lightbulb').css({filter:'grayscale(100%)'});
-                  }
-                  if (nowScrollTop >= $(".designer").position().top)
-                  {
-                    $('.designer').css({filter:'grayscale(100%)'});
-                  }
-                  if (nowScrollTop >= $(".customer").position().top)
-                  {
-                    $('.customer').css({filter:'grayscale(100%)'});
-                  } 
-			}
-		 lastScrollTop = $(this).scrollTop();
-		 }
-	 });
- });
-
-
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
 </script>
-
 </html>
