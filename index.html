@@ -13,6 +13,11 @@
     
     <link rel="stylesheet" href="css/cssanimate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- owl-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- -->
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -251,40 +256,51 @@
         </div>
 
         <div class="section3" id="3">
-           <div class="row ">
-            <div class="circle-one"></div> 
-              <div class="col-sm-12">
-                <div data-aos="row fade-right ">
-                    <div class="">Why chose us ?</div>
-                    
-                </div>
-                    <div class="row">
-                        
-                        <div class="col-sm-6">
-                            <br>
-                            <br>
-                            <br>
-                            <div class="imagewhy"></div>
-                        </div>
-                       <div class="col-sm-6 whyanimation">
-                         
-                           <div  class="lightbulb circle">
-                                                
-                           </div>
-                       </div>
-                        <div class="row ">
-                        <div  class="designer">
+           <div class="container ">
+          
+              <div class="col-sm-12 justify-content-center">
+                <div data-aos="fade-left imgconttext ">
+                    <div class="row col-sm-12">
+                     
+                       <div class="exerted">
                            
-                        </div>
-                        </div>
-                       <div class="row ">
-                        <div class="customer ">
-                           
-                          </div>
-                       </div>
+                    We use trending technologies that gives unique IT solutions
+                      </div>
+                       
                     </div>
+                      <div class="carousel-wrap" >
+                      
+                       <div class="col-sm-12 ">
+                              <div class="owl-carousel row ">
+                     <div > <img src="images/Technology/android.png"></div>
+                     <div > <img src="images/Technology/app-store.png"> </div>
+                     <div > <img src="images/Technology/flutter.png"> </div>
+                     <div > <img src="images/Technology/reactlogo2.png"> </div>
+                     <div > <img src="images/Technology/ionic-logo.png"> </div>
+                     <div > <img src="images/Technology/angular.png"> </div>
+                     <div > <img src="images/Technology/bootstrap_icon.png"> </div>
+                     
+                     <!--
+                     <div class="item"> <img src="images/Technology/laravel.png"> </div>    
+                     <div class="item"> <img src="images/Technology/symfony.png"> </div>
+                     <div class="item"> <img src="images/Technology/shopify.png"> </div>
+                     <div class="item"> <img src="images/Technology/yii_framwork.png"> </div>
+                     -->   
+
+                   
+                     <div class="item"> <img src="images/Technology/postgresql-logo.png"> </div>
+                     <div class="item"> <img src="images/Technology/mongo-db-design.png"> </div>
+                     <div class="item"> <img src="images/Technology/power-bi.jpg"> </div>
+                     <div class="item"> <img src="images/Technology/pentaho.png"> </div>
+                     <div class="item"> <img src="images/Technology/share-point.png"> </div>  
+                    </div>
+                      </div>
+                     
+                    </div>
+                  
                 </div>
               </div>
+                <div class="circle-one"></div> 
            </div>
         </div>
     
@@ -392,26 +408,33 @@
         });
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 <script>
-      
-$('.lightbulb').on('click', (evt) => {
-    $('.lightbulb').css({filter:'grayscale(0%)'});
-    $('.designer').css({filter:'grayscale(100%)'});
-    $('.customer').css({filter:'grayscale(100%)'});
-    $('.imagewhy').css({backgroundImage:'url(../images/undraw_lightbulb_moment_evxr.svg)'});
-}); 
-$('.designer').on('click', (evt) => {
-    $('.designer').css({filter:'grayscale(0%)'});
-    $('.lightbulb').css({filter:'grayscale(100%)'});
-    $('.customer').css({filter:'grayscale(100%)'});
-    $('.imagewhy').css({backgroundImage:'url(../images/undraw_creative_team_r90h.svg)'});
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    responsiveRefreshRate : 200,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+            loop:false
+        }
+    }
 });
-$('.customer').on('click', (evt) => {
-    $('.customer').css({filter:'grayscale(0%)'});
-    $('.designer').css({filter:'grayscale(100%)'});
-    $('.lightbulb').css({filter:'grayscale(100%)'});
-    $('.imagewhy').css({backgroundImage:'url(../images/undraw_Connecting_Teams_8ntu.svg)'});
-}); 
 </script>
-
 </html>
