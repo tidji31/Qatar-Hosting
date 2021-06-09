@@ -140,7 +140,7 @@
         <div class="section2" id="2">
             <div class="row form-group content">
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-right">
+                    <div class="card 1" data-aos="fade-right">
                         <img class="card-img-top" src="images/undraw_website_setup_5hr2.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">WEB DESIGN & DEVELOPMENT</h5>
@@ -148,7 +148,7 @@
                                 organization. Develop stunning website that are tailor made for you.</p>
                 
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore1">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -158,14 +158,14 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-up">
+                    <div class="card 2" data-aos="fade-up">
                         <img class="card-img-top" src="images/undraw_Mobile_application_mr4r.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">MOBILE APP DEVELOPMENT</h5>
                             <p class="card-text">Shape your app abstraction into the reality on the go. No matter
                                 how complex your necessities are, our professionals can manage it. </p>
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore2">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -176,14 +176,14 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-left">
+                    <div class="card 3" data-aos="fade-left">
                         <img class="card-img-top" src="images/undraw_search_engines_nn9e.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">SEARCH ENGINE OPTIMIZATION</h5>
                             <p class="card-text">Ensuring presence in internet is not enough for the growth of your
                                 company. Enhance your presence and get stunning SEO results. </p>
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore3">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -198,14 +198,14 @@
             </div>
             <div class="row form-group content">
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-right">
+                    <div class="card 4" data-aos="fade-right">
                         <img class="card-img-top" src="images/undraw_design_tools_42tf.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">DESIGN AND BRANDING</h5>
                             <p class="card-text">Tell your customers - all about your product, but in a better way
                                 using our innovative graphic designs that stand out in the crowd. </p>
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore4">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -215,14 +215,14 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-up">
+                    <div class="card 5" data-aos="fade-up">
                         <img class="card-img-top" src="images/undraw_social_influencer_sgsv.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">ADVERTISING</h5>
                             <p class="card-text">• Web design • Brochure design • Advertisement Design • Logo design
                                 • Banner design • Business Card Design • Layout design • Branding. </p>
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore5">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -233,14 +233,14 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-left">
+                    <div class="card 6" data-aos="fade-left">
                         <img class="card-img-top" src="images/undraw_cloud_hosting_aodd.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">WEB HOSTING</h5>
                             <p class="card-text">QHOST offer various hosting services, inclusive of web hosting,
                                 reseller web hosting, VPS hosting and dedicated servers and individual C-panel.</p>
                                 <center>
-                                    <div class="button-wrapper">
+                                    <div class="button-wrapper" id="bmore6">
                                         <button class="subscribe-button">Read More 
                                         </button>
                                         </div>
@@ -385,7 +385,13 @@
 </script>
 <!-- -->
 <script>
-
+var classes = ['1','2','3','4','5','6'];
+$.each(classes, function(i, c) {
+    $('.' + c).click(function(){
+         $('#bmore1,#bmore2,#bmore3,#bmore4,#bmore5,#bmore6').hide();
+         $('#bmore'+c).toggle();
+    });
+});
 </script>
 <script>
     // Wrap every letter in a span
