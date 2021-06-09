@@ -26,7 +26,7 @@ html{
     
 
 }
-/* -- navigation -- */
+/* -- navigation  style*/
 nav{
       
     text-transform: uppercase;
@@ -34,7 +34,7 @@ nav{
     letter-spacing:.1rem;
     font-weight: 700px;
     font-size: .9rem;
-    background-color: rgba(32, 10, 92, 0.2)!important;
+    background-color: #42579a;
     
 }
 .navbar-brand p{
@@ -101,7 +101,7 @@ nav{
 
 .navig li:hover > ul li:hover > a {
   color: white;
-  background: linear-gradient(to left, #2e00f5, #d155b8);
+  background: linear-gradient(to left, rgba(32, 10, 92, 0.2), #d155b8);
   
   
 }
@@ -416,7 +416,7 @@ main{
   position: absolute;
   
 }
-
+ /* section2 style */
 .section2{
   
     background-repeat: no-repeat;
@@ -432,6 +432,7 @@ main{
     animation: gradient 15s ease infinite;
 
 }
+/* content style */
 .content {
 	
     margin: 2 auto;
@@ -449,6 +450,7 @@ main{
       background-position: 0% 50%;
   }
 }
+/*section3 style */
 .section3{
   background-repeat: no-repeat;
     width: 100%;
@@ -463,15 +465,14 @@ main{
     
  
 }
-/* card */
-
+/* card style*/
 .card {
   font-size: 1em;
   overflow: hidden;
   padding: 2;
   border: 0px ; 
   float: none;  
-  height:40vh;
+  min-height: 200px;
   width: 100%;
   margin: 2 auto;
   
@@ -652,7 +653,7 @@ div.exerted {
 }
 /*footer*/
 .col_white_amrc { color:#FFF;}
-footer { width:100%; background: linear-gradient(to left, #2e00f5, #d155b8); min-height:250px; padding:10px 0px 25px 0px ;}
+footer { width:100%; background: #42579a; min-height:250px; padding:10px 0px 25px 0px ;}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
 footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .mb10 { padding-bottom:15px ;}
