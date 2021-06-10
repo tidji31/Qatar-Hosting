@@ -34,7 +34,7 @@ nav{
     letter-spacing:.1rem;
     font-weight: 700px;
     font-size: .9rem;
-    background-color: #42579a;
+    background-color:rgba(32, 10, 92, 0)!important;
     
 }
 .navbar-brand p{
@@ -629,7 +629,7 @@ div.exerted {
   text-transform: uppercase;  
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: #434253;
+  color: #000000;
   text-align: left;
   font-size: 3.5rem;
   line-height: 4rem;
