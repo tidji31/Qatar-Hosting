@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +13,24 @@
     <link rel="stylesheet" href="css/cssanimate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- owl-->
+    <!-- this site use owl carousel from https://owlcarousel2.github.io/OwlCarousel2/-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- -->
+    <!-- this site use jquery from https://jquery.com/ -->
     <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- this site use bootstrap from https://getbootstrap.com/ -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- this site use fontawesome from https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/bae0b397aa.js" crossorigin="anonymous"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
-
+    <meta name="description" content="Qweb is the best web design and development company in Doha, Qatar. Our services includes website designing,mobile app development,SEO,advertising,logo and branding,digital marketing.">
+    <meta name="keywords" content="web hosting,web design qatar,web design doha,website designing doha,logo design qatar,SEO company qatar,internet marketing qatar">
+    <meta name="author" content="Qhost">
+    <meta name="abstract" content="web hosting,web design qatar, web design company in qatar,web designer qatar,web design doha ,seo company qatar,web design companies in qatar,website design qatar">
 </head>
 
 <body>
@@ -307,12 +311,12 @@
     <h5 class="headin5_amrc col_white_amrc pt2">CONTACT</h5>
     <!--headin5_amrc-->
    
-    <p><i class="fa fa-location-arrow"></i> PO.Box 10495
-        1st Floor, Hameedco Building.
-        Al Sari Street, Muntazah
-        Doha – Qatar</p>
-    <p><i class="fa fa-phone"></i>  +974 66 666 666 </p>
-    <p><i class="fa fa fa-envelope"></i> qhost@example.com  </p>
+    <p><i class="fa fa-location-arrow"></i> BP.N° 06
+        Elmanzah, Canstel Oran.
+        10 Rue Aras , 
+        Canastel – Oran</p>
+    <p><i class="fa fa-phone"></i>  +213 552 439 780 </p>
+    <p><i class="fa fa fa-envelope"></i> tidji31@gmail.com  </p>
     
     
     </div>
@@ -372,10 +376,16 @@
 </script>
 <!-- -->
 <script>
+//show button read more when the mouse is over OR click in main class
 var classes = ['1','2','3','4','5','6'];
 $.each(classes, function(i, c) {
+
     $('.' + c).click(function(){
-         $('#bmore1,#bmore2,#bmore3,#bmore4,#bmore5,#bmore6').hide();
+         $('[id^=bmore]').hide();
+         $('#bmore'+c).toggle();
+    });
+    $('.' + c).mouseover(function(){
+         $('[id^=bmore]').hide();
          $('#bmore'+c).toggle();
     });
 });
