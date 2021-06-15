@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <script src="css/bootstrap.min.css.map" type="application/json"></script>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet/less" type="text/css" href="scss/button.scss"/>
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- this site use jquery from https://jquery.com/ -->
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- this site use bootstrap from https://getbootstrap.com/ -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -31,20 +32,7 @@
     <meta name="keywords" content="web hosting,web design qatar,web design doha,website designing doha,logo design qatar,SEO company qatar,internet marketing qatar">
     <meta name="author" content="Qatar Hosting">
     <meta name="abstract" content="web hosting,web design qatar, web design company in qatar,web designer qatar,web design doha ,seo company qatar,web design companies in qatar,website design qatar">
-   <script>
-    $(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 200) {
-        $(".navig").css("background" , "linear-gradient(to left, #385bc9,#2e417d)");       
-	  }
 
-	  else{
-		  $(".navig").css("background" , "");  	
-	  }
-  })
-})
-    </script>
 </head>
 
 <body>
@@ -56,18 +44,16 @@
                 <div class="container ">
                     <div class="row col-lg-12">
                         <div class="col-lg-2">
-                            <a class="navbar-brand">
-                                
-                            </a>
                         </div>
                         <div class="col-lg-10 align-self-center">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span> </button>
-                            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-                                <ul class="navigation navbar-nav ml-auto text-center">
-                                    <li class="nav-item active"> <a href="#" class="nav-link"> Home </a> </li>
-                                    <li class="nav-item"> <a href="#" class="nav-link"> SERVICES <i class="fas fa-caret-down"></i></a>
+                             <button class="navbar-toggler" type="button" id="toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                             </button>
+                            <div class="navbar-collapse collapse w-100  order-1 order-md-0 " id="navbarSupportedContent">
+                            <div class="d-flex">
+                                <ul class="navigation navbar-nav list-inline mx-auto justify-content-center">
+                                    <li class="nav-item active list-inline-item"> <a href="#" class="nav-link"> Home </a> </li>
+                                    <li class="nav-item list-inline-item"> <a href="#" class="nav-link"> SERVICES <i class="fas fa-caret-down"></i></a>
                                         <ul>
                                             <li><a href="#">- WEB DESIGN & DEVELOPMENT</a></li>
                                             <li><a href="#">- MOBILE APP DEVELOPMENT</a></li>
@@ -76,18 +62,20 @@
                                             <li><a href="#">- ADVERTISING</a></li>
                                             <li><a href="#">- WEB HOSTING</a></li>
                                           </ul> </li>
-                                    <li class="nav-item"> <a href="#" class="nav-link"> About </a> </li>
-                                    <li class="nav-item"> <a href="#" class="nav-link"> Contact Us </a> </li>
+                                    <li class="nav-item list-inline-item"> <a href="#" class="nav-link"> About </a> </li>
+                                    <li class="nav-item list-inline-item"> <a href="#" class="nav-link"> Contact Us </a> </li>
                                 </ul>
+                                </div>
                             </div>
-                        </div>                    
+                        </div>   
+                        <div class="col-lg-2">
+                        </div>                 
                     </div>
                 </div>
             </nav>
             <div class="wave "></div>
             <div class="wave "></div>
             <div class="caption ">
-
                 <h1 class="h1title">Welcome to Qatar Hosting</h1>
                 <h3 class="h1titleh"> The Best Web Hosting in qatar</h3>
             </div>
@@ -121,12 +109,17 @@
                     </div>        
                 </div>
                 <!-- #endregion about image-->
+                
             </div>
+             <div class="svg-border-rounded " style="color:#f2f6fc ">
+                            <!-- Rounded SVG Border-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                        </div> 
         </div>
-        <div class="section2" id="2">
+        <div class="section2" id="2">                    
             <div class="row form-group content">
                 <div class="col-lg-4">
-                    <div class="card 1" data-aos="fade-right">
+                    <div class="card 1 " data-aos="fade-right">
                         <img class="card-img-top" src="images/undraw_website_setup_5hr2.svg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">WEB DESIGN & DEVELOPMENT</h5>
@@ -223,7 +216,11 @@
                         </div>              
                     </div>
                 </div>
+               
             </div>
+             <div class="svg-border-rounded " style="color:white;border:none">
+                <svg xmlns="" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+                </div>
         </div>
         <div class="section3" id="3">
            <div class="container ">  
@@ -328,82 +325,8 @@
     
     </footer>
 <!-- -->
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-            AOS.init({
-                duration: 1800,
-                easing: 'ease-in-out-back'
-            });
-        });
 
-    });
-</script>
 <!-- -->
-<script>
-//show button read more when the mouse is over OR click in main class
-var classes = ['1','2','3','4','5','6'];
-$.each(classes, function(i, c) {
-
-    $('.' + c).click(function(){
-         $('[id^=bmore]').hide();
-         $('#bmore'+c).toggle();
-    });
-    $('.' + c).mouseover(function(){
-         $('[id^=bmore]').hide();
-         $('#bmore'+c).toggle();
-    });
-});
-</script>
-<script>
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.h1titleh');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({ loop: true })
-        .add({
-            targets: '.h1titleh .letter',
-            opacity: [0, 1],
-            easing: "easeInOutQuad",
-            duration: 2250,
-            delay: (el, i) => 150 * (i + 1)
-        }).add({
-            targets: '.h1titleh',
-            opacity: 1,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 7000
-        });
-</script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-<script>
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:4,
-    loop:true,
-    margin:10,
-    responsiveRefreshRate : 200,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:false,
-            loop:false
-        }
-    }
-});
-</script>
+<script src="js/main.js"></script>
 </html>
