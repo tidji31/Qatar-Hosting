@@ -637,6 +637,55 @@ div.exerted {
   font-size: 16px;
   line-height: 1.7em;
 }
+/* contact form css*/
+
+.contact{
+  padding: 10%;
+  height: 400px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-family: 'Roboto', sans-serif;
+}
+.col-md-3{
+  background: linear-gradient(to left, #073557, #324869);
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 15%;
+}
+.contact-info h2{
+  margin-bottom: 10%;
+}
+.col-md-9{
+  background: linear-gradient(to right, #073557, #324869);
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+  font-weight:600;
+}
+.contact-form button{
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus{
+  box-shadow:none;
+}
+
+
+
+
+
+
 /*footer*/
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background: #42579a; min-height:250px; padding:10px 0px 25px 0px ;}

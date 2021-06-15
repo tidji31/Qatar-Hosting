@@ -83,5 +83,10 @@ $(document).ready(function(){
                     easing: 'ease-in-out-back'
                 });
             });
+
+    // show model to edit   
+      $("#contact").click(function(){
+        $('#Modal_Edit').modal('show');
+      })   
     
     })
