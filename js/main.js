@@ -84,9 +84,17 @@ $(document).ready(function(){
                 });
             });
 
-    // show model to edit   
+    // show contact us form
       $("#contact").click(function(){
         $('#Modal_Edit').modal('show');
-      })   
+      })  
+    // hide contact us form   
+    $("#close").click(function(){
+        //$('#Modal_Edit').attr('class', 'modal fade');
+        $('#Modal_Edit').hide();
+        //$('.modal-backdrop fade show').atrr('clas', 'modal-backdrop fade');
+        $('.modal-backdrop').remove();
+        location.reload();
+      }) 
     
     })

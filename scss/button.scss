@@ -11,7 +11,7 @@
   }
 }
 
-.subscribe-button {
+.shine-button {
   font-size: 1rem;
   font-weight: 600;
   color: whitesmoke;
@@ -55,13 +55,13 @@
     transform: translateX(-100px) skewX(-15deg);
   }
 
-  // grow button and change background gradient on hover
+  // grow button and change background 
   &:hover {
     background-image: (linear-gradient(to left, #2e00f5, #d155b8));
     transform: scale(1.2);
     cursor: pointer;
 
-    // psuedo-elements for right- and left-side shine animations
+  // psuedo-elements for right- and left-side shine animations
     &::before,
     &::after {
       transform: translateX(300px) skewX(-15deg);

@@ -19,6 +19,9 @@ html{
     
 
 }
+body {
+    text-align: center;
+}
 /* -- navigation  style*/
 nav{
       
@@ -638,23 +641,53 @@ div.exerted {
   line-height: 1.7em;
 }
 /* contact form css*/
-
 .contact{
-  padding: 10%;
+  padding: 5%;
   height: 400px;
-  color: white;
-  font-size: 16px;
-  line-height: 1.7em;
+  left: 15px;
+  right:15px;
+  position: absolute;
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
+ 
+}
+
+.col-md-12{
+  color: black;
+  background-color:#f2f6fc !important; 
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+div.col-md-12 .shine-button{
+  font-size: 1rem;
+  font-weight: 600;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  background-size: 400% 400%;
+}
+div.col-md-12 .close{
+  width: 30px;
+  height: 30px;
+  float: right !important;
+  border-radius: 15px;
 }
 .col-md-3{
-  background: linear-gradient(to left, #073557, #324869);
-  padding: 4%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0 40px;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 .contact-info{
   margin-top:10%;
+  text-align: center;
+  text-transform: uppercase;  
+  font-weight: 400;
 }
 .contact-info img{
   margin-bottom: 15%;
@@ -663,13 +696,13 @@ div.exerted {
   margin-bottom: 10%;
 }
 .col-md-9{
-  background: linear-gradient(to right, #073557, #324869);
   padding: 3%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 .contact-form label{
   font-weight:600;
+  
 }
 .contact-form button{
   background: #25274d;
