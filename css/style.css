@@ -44,7 +44,6 @@ nav{
 .navbar-nav li{
   padding-right: .7rem;
 }
-
 .navbar-dark .navbar-nav .nav-link{
   color: whitesmoke;
   font-size: 1rem;
@@ -816,7 +815,7 @@ footer p {
 /* smooth transition effect. */
 /*facebook*/
 .cover ul li:hover.facebook {
-  border: 5px solid white;
+  border: 3px solid white;
   box-shadow: 0 0 15px white;
   transition: all 0.5s ease;
 }
@@ -829,7 +828,7 @@ footer p {
 
 /*twitter*/
 .cover ul li:hover.twitter {
-  border: 5px solid #00aced;
+  border: 3px solid #00aced;
   box-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
 }
@@ -842,7 +841,7 @@ footer p {
 
 /* instagram */
 .cover ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
+  border: 3px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
 }
@@ -855,7 +854,7 @@ footer p {
 
 /* whatsapp */
 .cover ul li:hover.whatsapp {
-  border: 5px solid #4dc247;
+  border: 3px solid #4dc247;
   box-shadow: 0 0 15px #4dc247;
   transition: all 0.5s ease;
 }
@@ -868,13 +867,10 @@ footer p {
 /* media queries */
 @media screen and (max-width: 640px){
   .cover {
-      width: 350px;
+      width: 214px;
   }
   .cover ul li{
       margin-top: 10px;
-  }
-  .cover ul li.google{
-      margin-left: 60px;
   }
 }
 
