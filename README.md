@@ -28,11 +28,11 @@ Credits :
 => Framework : http://getbootstrap.com
 
 
-Preview : https://htmlpreview.github.io/?https://github.com/tidji31/Qatar-dream/index.html
 
 Usage :
 -------
 If you have Docker already set up, you can run this project using NGINX image in one line:
+
 PowerShell:
 
 ``` docker run -it --rm -d -p 80:80 --name Qatar-dream -v ${PWD}:/usr/share/nginx/html nginx ```
