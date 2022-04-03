@@ -32,6 +32,7 @@ Credits :
 Usage :
 -------
 1-Clone or dowbload the project.
+
 2-If you have Docker already set up, you can run this project using NGINX image in one line:
 
 PowerShell:
