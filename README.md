@@ -1,6 +1,6 @@
 # Qatar-dream
 
-![alt text for screen readers](/path/to/image.png "Text to show on mouseover").
+![alt text for screen readers](/images/qatar-dream-2022-3-3.gif "Text to show on mouseover").
 
 
 Qatar-dream is a new modern Bootstrap 4 template for Hosting and Domain business website. It is created for individuals and companies in Qatar who offer websites, mobile apps, or any other hosting and domain selling services. Business including web hosting, domain listing, domain selling, domain parking, domain for sale, business hosting, cloud hosting, VPS hosting, etc.
