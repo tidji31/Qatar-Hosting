@@ -19,7 +19,6 @@ Fully Customizable
 
 Contact Form
 
-business hosting, cloud hosting, domain, domain for sale, domain listing, domain parking, domain selling, hosting, hosting domain, web hosting, web server 
 
 Credits :
 -------
