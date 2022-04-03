@@ -23,6 +23,6 @@ business hosting, cloud hosting, domain, domain for sale, domain listing, domain
 
 Credits :
 -------
-=> ilustration: **unDraw** - https://undraw.co/illustrations 
+=> Ilustration: **unDraw** - https://undraw.co/illustrations 
 
 => Framework : http://getbootstrap.com
