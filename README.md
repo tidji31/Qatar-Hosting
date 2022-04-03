@@ -5,7 +5,7 @@ Key features
 -------------
 Twitter Bootstrap 5+
 
-Clean & Developer-friendly HTML5,CSS3,JavaScript  code
+Clean & Developer-friendly JavaScript-SCSS-Less-CSS-HTML code
 
 100% Responsive Layout Design 
 
@@ -19,10 +19,9 @@ Fully Customizable
 
 Contact Form
 
-business hosting, cloud hosting, domain, domain for sale, domain listing, domain parking, domain selling, hosting, hosting domain, hosting html, hosting template, reseller hosting, vps hosting, web hosting, web server 
+business hosting, cloud hosting, domain, domain for sale, domain listing, domain parking, domain selling, hosting, hosting domain, web hosting, web server 
 
 Credits :
 -------
-=> Photos used in template: **Unsplash** - http://unsplash.com, http://risewall.com/home-business-team-wallpapers.html
 => ilustration: **unDraw** - https://undraw.co/illustrations 
 => Framework : http://getbootstrap.com
