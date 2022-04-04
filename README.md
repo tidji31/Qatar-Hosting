@@ -3,7 +3,7 @@
 ![alt text for screen readers](/images/qatar-dream-2022-3-3.gif "Qatar-Hosting").
 
 
-Qatar-dream is a new modern Bootstrap 4 template for Hosting and Domain business website. It is created for individuals and companies in Qatar who offer websites, mobile apps, or any other hosting and domain selling services. Business including web hosting, domain listing, domain selling, domain parking, domain for sale, business hosting, cloud hosting, VPS hosting, etc.
+Qatar-Hosting is a new modern Bootstrap 4 template for Hosting and Domain business website. It is created for individuals and companies in Qatar who offer websites, mobile apps, or any other hosting and domain selling services. Business including web hosting, domain listing, domain selling, domain parking, domain for sale, business hosting, cloud hosting, VPS hosting, etc.
 
 Key features
 -------------
@@ -40,12 +40,12 @@ Usage :
 
 PowerShell:
 
-``` docker run -it --rm -d -p 80:80 --name Qatar-dream -v ${PWD}:/usr/share/nginx/html nginx ```
+``` docker run -it --rm -d -p 80:80 --name Qatar-Hosting -v ${PWD}:/usr/share/nginx/html nginx ```
 
 Windows Command Line (cmd):
 
-``` docker run -it --rm -d -p 80:80 --name Qatar-dream -v %cd%:/usr/share/nginx/html nginx ```
+``` docker run -it --rm -d -p 80:80 --name Qatar-Hosting -v %cd%:/usr/share/nginx/html nginx ```
 
 On Linux:
 
-``` docker run -it --rm -d -p 80:80 --name Qatar-dream -v $(pwd):/usr/share/nginx/html nginx ```
+``` docker run -it --rm -d -p 80:80 --name Qatar-Hosting -v $(pwd):/usr/share/nginx/html nginx ```
