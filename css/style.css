@@ -929,12 +929,11 @@ footer p {
 
 /* Style the icons */
 
-.cover ul li .fa {
+.cover .fa-facebook, .fa-square-x-twitter, .instagram, .whatsapp{
     color: whitesmoke;
     margin-top: 5px;
     transition: all 0.5s ease;
 }
-
 
 /* smooth transition effect. */
 
@@ -956,13 +955,13 @@ footer p {
 
 /*twitter*/
 
-.cover ul li:hover.twitter {
+.cover ul li:hover.fa-square-x-twitter{
     border: 3px solid #00aced;
     box-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
 }
 
-.cover ul li:hover .fa-twitter {
+.cover ul li:hover .fa-square-x-twitter {
     color: #00aced;
     text-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
